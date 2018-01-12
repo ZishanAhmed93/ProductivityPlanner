@@ -1,6 +1,7 @@
 const bodyParser = require('body-parser')
 const express = require('express')
 const models = require('./server/models')
+
 const passport = require('passport')
 const expressSession = require('express-session')
 var path = require('path')
@@ -21,13 +22,13 @@ app.use(passport.session())
 
 
 // Load up all of the controllers
-//NEED TO UNCOMMENT 
+//NEED TO UNCOMMENT
 
-// const controllers = require('./controllers')
-// app.use('/', controllers)
-// app.get('*',(req, res) =>{
-//   res.sendFile(path.join(__dirname, '/public/index.html'))
-// })
+const controllers = require('./server/controllers')
+app.use('/', controllers)
+app.get('*',(req, res) =>{
+  res.sendFile(path.join(__dirname, '/public/index.html'))
+})
 
 // First, make sure the Database tables and models are in sync
 // then, start up the server and start listening.
