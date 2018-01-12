@@ -1,6 +1,6 @@
 const bodyParser = require('body-parser')
 const express = require('express')
-const models = require('./models')
+const models = require('./server/models')
 const passport = require('passport')
 const expressSession = require('express-session')
 var path = require('path')
@@ -22,6 +22,7 @@ app.use(passport.session())
 
 // Load up all of the controllers
 //NEED TO UNCOMMENT 
+
 // const controllers = require('./controllers')
 // app.use('/', controllers)
 // app.get('*',(req, res) =>{

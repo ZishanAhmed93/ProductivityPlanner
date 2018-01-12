@@ -1,0 +1,9 @@
+{
+  "development": {
+    "username": "root",
+    "password": null,
+    "database": "dev_pplan",
+    "host": "127.0.0.1",
+    "dialect": "postgresql"
+  }
+ }

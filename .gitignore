@@ -1,5 +1,4 @@
-config
-public
-public/bundle.js
+config/config.js
 node_modules
 package-lock.json
+public

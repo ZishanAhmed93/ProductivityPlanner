@@ -3,7 +3,7 @@ var webpack = require('webpack');
 
 var config = {
 
-  entry: path.resolve(__dirname, 'views/main.jsx'),
+  entry: path.resolve(__dirname, './server/views/main.jsx'),
   output: {
     path: __dirname + '/public',
     filename: 'bundle.js'
