@@ -3,3 +3,4 @@ node_modules
 package-lock.json
 public
 public/bundle.js
+.DS_Store
