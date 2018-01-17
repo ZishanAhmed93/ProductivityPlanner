@@ -6,7 +6,7 @@ const passport = require('passport')
 const expressSession = require('express-session')
 var path = require('path')
 
-const PORT = process.env.PORT || 3001
+const PORT = process.env.PORT || 8081
 
 const app = express()
 
@@ -22,8 +22,6 @@ app.use(passport.session())
 
 
 // Load up all of the controllers
-//NEED TO UNCOMMENT
-
 const controllers = require('./server/controllers')
 app.use('/', controllers)
 app.get('*',(req, res) =>{
